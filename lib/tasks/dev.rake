@@ -21,12 +21,5 @@ task({ :sample_data => :environment }) do
   item_2.thumbnail_url = "https://fastly.picsum.photos/id/682/200/200.jpg?hmac=098XkPnTe9a41I6BtB9xV4t6L8c3ESkdowMLElFBR5A"
   item_2.save
 
-  puts "Creating third item..."
-  item_3 = Item.new
-  item_3.link_url = "https://www.newyorker.com/magazine/2007/12/10/the-checklist/"
-  item_3.link_description = "A Life-Saving Checklist — The New Yorker"
-  item_3.thumbnail_url = "https://fastly.picsum.photos/id/971/200/200.jpg?hmac=xcJY-VNIH_UD01lMlLi4mADmQrLTgoEE2_NYEhL3VQA"
-  item_3.save
-
   puts "Done!"
 end
